@@ -18,7 +18,7 @@ jobs:
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v1
     - name: Setup NuGet
-      uses: NuGet/setup-nuget@v1.0.2
+      uses: NuGet/setup-nuget@v1.0.5
     - name: Restore Nuget
       working-directory: Project-Aurora
       run: nuget restore
