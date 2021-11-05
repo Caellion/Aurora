@@ -25,7 +25,7 @@ jobs:
     - name: Build Solution
       working-directory: Project-Aurora
       run: |
-        msbuild.exe Project-Aurora.sln /nologo /nr:false /p:DeployOnBuild=true /p:DeployDefaultTarget=WebPublish /p:WebPublishMethod=FileSystem /p:DeleteExistingFiles=True /p:platform="Any CPU" /p:configuration="Release" /p:PublishUrl="./build"
+        msbuild.exe Project-Aurora.sln /nologo /nr:false /p:DeployOnBuild=true /p:DeployDefaultTarget=WebPublish /p:WebPublishMethod=FileSystem /p:DeleteExistingFiles=True /p:platform="x64" /p:configuration="Release" /p:PublishUrl="./build"
     - name: Upload artifact
       uses: actions/upload-artifact@v1.0.0
       with:
